@@ -1,0 +1,121 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="22dp"/>
+
+    <ImageView
+        android:id="@+id/formula"
+        android:layout_width="360dp"
+        android:layout_height="265dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choice"
+        app:layout_constraintBottom_toTopOf="@id/rect3"/>
+
+    <ImageView
+        android:id="@+id/rect3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rect4"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/rectR"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="@+id/rect3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCount"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/rect4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/rect3"
+        app:layout_constraintBottom_toTopOf="@+id/btnCount"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:hint="@string/data"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/rect4"
+        app:layout_constraintBottom_toBottomOf="@id/rect4"
+        app:layout_constraintLeft_toLeftOf="@+id/rect4"
+        app:layout_constraintRight_toRightOf="@id/rect4"
+        android:visibility="visible"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/inputB"
+        android:textSize="18sp"
+        android:hint="@string/inputB"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@id/rectR"
+        app:layout_constraintBottom_toBottomOf="@id/rectR"
+        app:layout_constraintLeft_toLeftOf="@+id/rectR"
+        app:layout_constraintRight_toRightOf="@id/rectR"
+        android:visibility="invisible"/>
+
+
+    <Button
+        android:id="@+id/btnCount"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="70dp"
+        android:text="@string/count"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="Count"
+        />
+
+
+    <Spinner
+        android:id="@+id/shape"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:ems="10"
+        android:hint="@string/choose"
+        app:layout_constraintTop_toTopOf="@id/rect3"
+        app:layout_constraintBottom_toBottomOf="@id/rect3"
+        app:layout_constraintLeft_toLeftOf="@+id/rect3"
+        app:layout_constraintRight_toRightOf="@id/rect3"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

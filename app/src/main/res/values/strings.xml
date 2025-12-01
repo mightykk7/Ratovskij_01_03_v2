@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UP_Ratovskij</string>
+    <string name="text1">Геометрические фигуры</string>
+    <string name="text2">Начать</string>
+    <string name="geo">Геометрический калькулятор</string>
+    <string name="register">На Главную</string>
+    <string name="Pick">Выбор фигуры</string>
+    <string name="Pickfig">Выберите фигуру</string>
+    <string name="data">Введите данные для расчета</string>
+    <string name="enterr">Выполнить расчёт</string>
+    <string name="result">Результат вычисления</string>
+    <string name="namefig">Название выбранной фигуры</string>
+    <string name="result2">РЕЗУЛЬТАТ</string>
+    <string name="choice">Выбор фигуры</string>
+    <string name="choose">Выберите фигуру</string>
+    <string name="count">Выполнить расчет</string>
+    <string name="shapeName">Название выбранной фигуры</string>
+    <string name="res">Результат</string>
+    <string name="inputA">Введите а</string>
+    <string name="inputB">Введите b</string>
+</resources>
