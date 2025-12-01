@@ -119,6 +119,10 @@ class Second : AppCompatActivity() {
                 showToast("Такого треугольника не существует")
                 return false
             }
+            if (a == 0.0 || bVal == 0.0){
+                showToast("Такого треугольника не существует")
+                return false
+            }
         }
 
         return true
